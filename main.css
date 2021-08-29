@@ -3,14 +3,17 @@ body{
     background-color: hsl(225, 100%, 94%);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 .container{
     border-radius : 20px;
     background-color: hsl(225, 100%, 98%);
     width: 450px;
-    margin: auto;
-    text-align: center;
     font-family: 'Red Hat Display', sans-serif;
+    position: absolute;
+    left: 495px;
 }
 
 img{
