@@ -1,26 +1,98 @@
-body{
-    background-image: url('/images/pattern-background-desktop.svg');
-    background-color: hsl(225, 100%, 94%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-.container{
-    border-radius : 20px;
-    background-color: hsl(225, 100%, 98%);
-    width: 450px;
-    font-family: 'Red Hat Display', sans-serif;
-    position: absolute;
-    left: 495px;
+body {
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-size: 1440px;
+  background-repeat: repeat-x;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  width: 1440px;
 }
 
-img{
-    border-top-left-radius : 20px;
-    border-top-right-radius : 20px;
+.principal {
+  width: 450px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 50%;
+  margin-top: 10%;
 }
-p{
-    font-size: 16px;
-    color: hsl(224, 23%, 55%)
+
+#back {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.text {
+  color: rgb(149, 147, 147);
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.charge {
+  width: 360px;
+  height: 100px;
+  margin: 20px;
+  background-color: hsl(225, 100%, 94%);
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+}
+
+.audio {
+  padding: 10px;
+}
+
+.annual {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#annual {
+  margin-bottom: 1px;
+}
+
+#price {
+  color: rgb(149, 147, 147);
+  margin-top: 1px;
+}
+
+.change {
+  padding-left: 110px;
+}
+#change{
+    text-decoration-line: none;
+}
+
+#change:active{
+    color: hsl(223, 47%, 23%); 
+}
+
+.proceed {
+  width: 360px;
+  height: 60px;
+  margin: 20px;
+  text-align: center;
+  background: hsl(245, 75%, 52%);
+  box-shadow: 0px 13px 20px 4px rgb(100, 99, 99);
+  border-radius: 30px;
+  color: white;
+}
+
+.proceed:active{
+    background-color: hsl(223, 47%, 23%);
+}
+
+.cancel{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-decoration-line: none;
+}
+
+.cancel:active{
+    color: grey;
 }
