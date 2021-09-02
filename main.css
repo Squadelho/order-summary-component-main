@@ -1,22 +1,25 @@
 body {
   background-image: url("/images/pattern-background-desktop.svg");
-  background-size: 1440px;
-  background-repeat: repeat-x;
+  /* background-size: 1440px; */
+  /* background-repeat: repeat-x; */
   background-color: hsl(225, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
-  width: 1440px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
 }
 
 .mainContainer {
   width: 450px;
-  background-color: hsl(225, 100%, 98%);
+  background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 50%;
-  margin-top: 10%;
+/*   margin: 50%;
+  margin-top: 10%; */
+  margin: 15vh auto;
 }
 
 #back {
@@ -30,56 +33,60 @@ body {
   margin: 20px;
   text-align: center;
   line-height: 24px;
+  margin-bottom: 30px;
 }
 
 .charge {
-  width: 360px;
-  height: 100px;
-  margin: 20px;
-  background-color: hsl(225, 100%, 94%);
-  border-radius: 20px;
-  align-items: center;
-  display: flex;
+    display: flex;
+    margin: 0 15%;
+    color: white;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .audio {
-  padding: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 .annual {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+    margin-left: 5px;
+    color: hsl(224, 23%, 55%);    
+    text-align: left;
 }
 
-#annual {
-  margin-bottom: 1px;
-}
-
-#price {
-  color: rgb(149, 147, 147);
-  margin-top: 1px;
+.titlePlan{
+  color: black;
+  font-weight: bold;
 }
 
 .change {
-  padding-left: 110px;
+  right: 0;
+  margin-left: 80px;
+  
+  
 }
 #change{
     text-decoration-line: none;
-}
+    color: black;
+  }
 
 #change:hover{
     color: hsl(223, 47%, 23%); 
 }
 
 .proceed {
-  width: 360px;
+  width: 292px;
   height: 60px;
   margin: 20px;
   text-align: center;
   background: hsl(245, 75%, 52%);
   box-shadow: 5px 13px 20px 0px rgba(0,0,0,0.25);
-  border-radius: 30px;
+  border-radius: 10px;
   color: white;
 }
 
@@ -95,4 +102,16 @@ body {
 
 .cancel:hover{
     color: grey;
+}
+
+@media (max-width: 375px) {
+  body{
+      background-image: url("/images/pattern-background-mobile.svg");
+
+  }
+  .mainContainer .change .proceed #back{
+    width: 90%;
+    margin: 5vh auto;
+  }
+  
 }
