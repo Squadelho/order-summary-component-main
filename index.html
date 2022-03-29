@@ -2,33 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <title>Frontend Mentor | Order summary card</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
 </head>
 
 <body>
-  <main>
-    <div class="mainContainer">
-      <img id="back" src="images/illustration-hero.svg" alt="">
-      <h1>Order Summary</h1>
-      <p class="text">You can listen to millions of songs, audiobooks, and podcast on any device anywhere you like!</p>
-      <div class="charge">
-        <img src="/images/icon-music.svg" alt="" class="audio">
-        <div class="annual">
-          <div class="titlePlan">Annual Plan</div>
-          <div class="decPlan">$59.99/year</div>
+    <div class="card">
+        <img class="card__img" src="images/illustration-hero.svg" alt="">
+        <div class="card__content">
+            <h1 class="card__content-h2">Order Summary</h1>
+            <p class="card__content-p">You can now listen to millions of songs, audiobooks, and podcast on any device anywhere you like!</p>
+            <div class="plan">
+                <div class="plan__img">
+                    <img src="images/icon-music.svg" alt="">
+                </div>
+                <div class="plan__text">
+                    <p class="plan__text-p1">Annual Plan</p>
+                    <p class="plan__text-p2">$59.99/year</p>
+                </div>
+                <div class="plan__btn">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <a href="" class="card__btn card__btn--proceed">Proceed to Payment</a>
+            <a href="" class="card__btn card__btn--cancel">Cancel Order</a>
+            
         </div>
-        <div class="change">
-          <a href="">Change</a>
-        </div>
-      </div>
-      <button class="proceed" type="button"> <b>Proceed to payment</b></button>
-      <a class="cancel" href="">Cancel Order</a>
+
     </div>
-  </main>
 </body>
